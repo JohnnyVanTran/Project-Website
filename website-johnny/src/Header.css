@@ -1,0 +1,17 @@
+
+.site-header {
+    background-color: grey;
+    color: black;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: black;
+}
+nav a:hover {
+    text-decoration: underline;
+}
