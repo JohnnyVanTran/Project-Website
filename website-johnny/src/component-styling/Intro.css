@@ -5,10 +5,16 @@
     gap: 1.5rem;
     align-items: center;
 
-    width: 90vw;
-    background-color: pink;
+    background-color: #D9EAFD;
+    margin-top: 80px;
 }
 
 .site-intro h2 {
     color: black;
+}
+
+.img-portrait {
+    height: 500px;
+    padding-right: 100px;
+    padding: 20px;
 }
