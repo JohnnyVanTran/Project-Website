@@ -1,0 +1,13 @@
+
+.SkillCard {
+    background-color: #FBF9F1;
+
+    border: 1px solid #E5E1DA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.SkillCard ul{
+    padding: 1.5rem;
+    list-style: circle;
+
+}
