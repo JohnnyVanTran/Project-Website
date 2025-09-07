@@ -1,0 +1,19 @@
+
+.Ending {
+    background-color: #1C6EA4;
+    
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: -2rem;
+
+    height: 30vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ending-text {
+    color: white;
+    justify-self: center;
+}
