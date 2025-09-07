@@ -38,7 +38,7 @@ export const skills = [
         ] 
     },
     {
-        title : "Kotling",
+        title : "Kotlin",
         abilities : [
             "Android App Development Fundamentals",
             "Profecient in Kotlin Programming",

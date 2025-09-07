@@ -1,0 +1,173 @@
+.page-container {
+  min-height: 100vh;
+  background-color: #f3f4f6; /* bg-gray-100 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; /* p-4 */
+}
+
+/* Container for the form itself */
+.form-card {
+  background-color: white;
+  padding: 2rem; /* p-8 */
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+  width: 100%;
+  max-width: 32rem; /* max-w-lg */
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-card:hover {
+  transform: scale(1.01);
+}
+
+/* Heading for the form */
+.form-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #111827; /* text-gray-900 */
+  text-align: center;
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Individual form field container */
+.form-field {
+  margin-bottom: 1.5rem; /* equivalent to space-y-6 */
+}
+
+/* Label for inputs */
+.form-label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+/* Input and select fields */
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem; /* py-2, px-3, pl-10 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  color: #111827; /* text-gray-900 */
+  background-color: white;
+  font-size: 0.875rem; /* sm:text-sm */
+}
+
+/* Focus styles for inputs */
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6; /* focus:border-blue-500 */
+  box-shadow: 0 0 0 1px #3b82f6; /* focus:ring-blue-500 */
+}
+
+/* Textarea input field */
+.form-textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem; /* py-2, px-3, pl-10 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  color: #111827; /* text-gray-900 */
+  background-color: white;
+  font-size: 0.875rem; /* sm:text-sm */
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+/* Icon positioning */
+.icon-container {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem; /* pl-3 */
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.input-icon svg {
+  height: 1.25rem; /* h-5 */
+  width: 1.25rem; /* w-5 */
+  color: #9ca3af; /* text-gray-400 */
+}
+.textarea-icon {
+  position: absolute;
+  top: 0.75rem; /* top-3 */
+  left: 0.75rem; /* pl-3 */
+  display: flex;
+  align-items: flex-start;
+  pointer-events: none;
+}
+.textarea-icon svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #9ca3af;
+}
+
+/* Character counter */
+.char-count {
+  margin-top: 0.5rem; /* mt-2 */
+  text-align: right;
+  font-size: 0.75rem; /* text-xs */
+  color: #6b7280; /* text-gray-500 */
+}
+
+/* Submission button */
+.submit-btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem; /* px-4, py-2 */
+  border: 1px solid transparent;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: white;
+  background-color: #2563eb; /* bg-blue-600 */
+  transition-property: background-color;
+  transition-duration: 150ms;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.submit-btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3b82f6; /* focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 */
+}
+
+/* Status message for success/error */
+.status-message {
+  margin-top: 1.5rem; /* mt-6 */
+  padding: 1rem; /* p-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 0.875rem; /* text-sm */
+  text-align: center;
+  font-weight: 500; /* font-medium */
+}
+
+.status-success {
+  background-color: #d1fae5; /* bg-green-100 */
+  color: #065f46; /* text-green-700 */
+}
+
+.status-error {
+  background-color: #fee2e2; /* bg-red-100 */
+  color: #991b1b; /* text-red-700 */
+}

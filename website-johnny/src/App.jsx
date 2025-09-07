@@ -1,21 +1,24 @@
+
 import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
-import Intro from './components/Intro'
-import About from './components/About'
-import Skills from './components/Skills'
-import Bottom from './components/Bottom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Home from './components/Home';
+import Contact from './components/Contact'
+import Header from './components/Header';
 
 function App() {
 
   return (
-    <div className='App'>
-      <Header />
-      <Intro />
-      <About />
-      <Skills />
-      <Bottom />
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 
